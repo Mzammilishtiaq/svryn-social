@@ -1,14 +1,11 @@
 import React from 'react'
-import './App.css'
-import Navbar from './components/Navbar'
-import Sidebar from './components/Sidebar'
-
+import AppRouting from './AppRouting'
 function App() {
 
   return (
 <div>
-  <Navbar/>
-  <Sidebar/>
+<AppRouting/>
+  
 </div>
   )
 }
