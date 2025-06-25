@@ -1,14 +1,17 @@
 import { Route, Routes } from "react-router-dom"
 import MainContainer from "./Containers/MainContainer"
+import Login from "./screen/auth/login/Login"
 
 const Routers = [
-    {
-      path: '/',
+  {path:'/login',
+    component:<Login/>
+  },  
+  {
+      path: '',
       component: <MainContainer />,
-      protectedPath:false,
       children: [
         {
-          path: '',
+          path: '/cc',
           component:"ll",
           protectedPath: false,
           role: 'client',
@@ -16,7 +19,6 @@ const Routers = [
         {
           path: '/contributor',
           component:"",
-          protectedPath: false,
           role: 'client',
         }
       ]

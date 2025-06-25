@@ -15,3 +15,10 @@ export {default as Online4} from '../assets/online4.png'
 export {default as Online5} from '../assets/online5.png'
 export {default as Online6} from '../assets/online6.png'
 export {default as Online7} from '../assets/online7.png'
+
+export {default as LoginPhone} from '../assets/loginphone.png'
+export {default as Login1} from '../assets/login1.png'
+export {default as Login2} from '../assets/login2.png'
+export {default as Login3} from '../assets/login3.png'
+export {default as Logo} from '../assets/logo.png'
+

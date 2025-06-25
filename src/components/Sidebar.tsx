@@ -60,7 +60,7 @@ function Sidebar() {
         <div className="border-r-2 border-r-[#AFC2CF] h-5 w-2"></div>
       </div>
     <div className="flex flex-col justify-between h-full w-full rounded-2xl  border-2 border-gray-300 gap-y-2 ">
-      <h1 className="font-medium text-3xl text-center mt-2">Online Connections</h1>
+      <h1 className="font-medium text-2xl text-center mt-2">Online Connections</h1>
       {/* Top Avatars */}
       <div className="flex flex-col gap-y-1">
         {BottomAvatars.map((avatar, idx) => (
