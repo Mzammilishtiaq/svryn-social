@@ -4,6 +4,8 @@ import Login from "./screen/auth/login/Login"
 import Signup from "./screen/auth/Signup/Signup"
 import ForgotPassword from "./screen/auth/ForgotPassword/FortgotPassword"
 import MainPage from "./screen/Main/MainPage"
+import Profile from "./screen/Main/Profile"
+import Reels from "./screen/Main/Reels"
 
 const Routers = [
   {path:'/login',
@@ -24,8 +26,11 @@ const Routers = [
           component:<MainPage/>,
         },
         {
-          path: '/contributor',
-          component:"",
+          path: '/profile',
+          component:<Profile/>,
+        } ,{
+          path: '/reels',
+          component:<Reels/>,
         }
       ]
     }

@@ -74,8 +74,8 @@ const ReelStory = () => {
       }}
       >
         {reels.map((reel, idx) => (
-          <SwiperSlide key={idx} style={{ width: 150, minWidth: 200 }}>
-            <div className="relative h-[320px] rounded-2xl overflow-hidden flex-shrink-0 bg-gray-200">
+          <SwiperSlide key={idx} style={{ width: 120, minWidth: 120 }}>
+            <div className="relative h-56 rounded-2xl overflow-hidden flex-shrink-0 bg-gray-200">
               <img
                 src={reel.img}
                 alt={reel.text}
@@ -83,7 +83,7 @@ const ReelStory = () => {
               />
               {/* Overlay */}
               <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4">
-                <span className="text-white text-lg font-medium drop-shadow-md">
+                <span className="text-white text-sm font-medium drop-shadow-md">
                   {reel.text}
                 </span>
               </div>
