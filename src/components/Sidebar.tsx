@@ -27,7 +27,7 @@ const BottomAvatars = [
 
 function Sidebar() {
   return (
-    <div className="min-h-screen w-[20%]">
+    <div className="min-h-screen w-[20%] sticky top-0">
       <div className="flex justify-center items-center">
         <div className="border-r-2 border-r-[#AFC2CF] h-3 w-2"></div>
       </div>

@@ -1,25 +1,31 @@
 import { Route, Routes } from "react-router-dom"
 import MainContainer from "./Containers/MainContainer"
 import Login from "./screen/auth/login/Login"
+import Signup from "./screen/auth/Signup/Signup"
+import ForgotPassword from "./screen/auth/ForgotPassword/FortgotPassword"
+import MainPage from "./screen/Main/MainPage"
 
 const Routers = [
   {path:'/login',
     component:<Login/>
+  },
+  {path:'/forgotpassword',
+    component:<ForgotPassword/>
+  }, 
+  {path:'/signup',
+    component:<Signup/>
   },  
   {
       path: '',
       component: <MainContainer />,
       children: [
         {
-          path: '/cc',
-          component:"ll",
-          protectedPath: false,
-          role: 'client',
+          path: '',
+          component:<MainPage/>,
         },
         {
           path: '/contributor',
           component:"",
-          role: 'client',
         }
       ]
     }

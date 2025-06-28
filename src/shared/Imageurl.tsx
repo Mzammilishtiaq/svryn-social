@@ -22,3 +22,16 @@ export {default as Login2} from '../assets/login2.png'
 export {default as Login3} from '../assets/login3.png'
 export {default as Logo} from '../assets/logo.png'
 
+export {default as GoogleIcon} from '../assets/google-icon.svg'
+export {default as BgSignup} from '../assets/bg-signup.png'
+export {default as AppleIcon} from '../assets/apple-icon.svg'
+
+
+export {default as ShareIcon} from '../assets/share.png'
+export {default as CommentIcon} from '../assets/comment.png'
+export {default as HeartIcon} from '../assets/heart.png'
+export {default as FaverateIcon} from '../assets/faverate.png'
+export {default as VerifyIcon} from '../assets/verify-icon.svg'
+export {default as ThreeDots} from '../assets/threedots.png'
+export {default as Post1} from '../assets/post1.png'
+export {default as Post2} from '../assets/post2.png'

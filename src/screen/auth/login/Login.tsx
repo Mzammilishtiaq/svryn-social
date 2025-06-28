@@ -24,7 +24,7 @@ const SplashScreen = () => (
 const LoginPage = () => {  
     const router = useNavigate();
     return(
-  <div className="flex min-h-screen">
+  <div className="flex  h-screen">
     {/* Left Section */}
     <div className="w-1/2 bg-[#f8f8f3] p-16 flex flex-col justify-center">
       <img src={Logo} className="w-36 h-20"/>
@@ -60,19 +60,17 @@ const LoginPage = () => {
         <img src={Login1} alt="Phone" className="w-28 rounded-2xl absolute -left-14 top-[5%]" />
         <img src={Login2} alt="Phone" className="w-28 rounded-2xl absolute -left-14 top-[20%]" />
         <img src={Login3} alt="Phone" className="w-28 rounded-2xl absolute -left-14 top-[35%]" />
-      <div className="mb-8">
-        <img src={LoginPhone} alt="Phone" className="w-60 rounded-2xl" />
-      </div>
-      <form className="bg-white rounded-lg shadow-lg p-8 w-80 flex flex-col gap-4">
+        <img src={LoginPhone} alt="Phone" className="w-[250px] h-[400px] rounded-2xl -mt-4" />
+      <form className="bg-white rounded-lg shadow-lg p-4 w-80 flex flex-col gap-4">
        <input placeholder="Email" name="email" className="rounded-xl border border-[#373737] p-2"/>
        <input placeholder="Password" name="password" className="rounded-xl border border-[#373737] p-2"/>
         <Button variant="contained"  sx={{backgroundColor:'#AFC2CF'}} fullWidth onClick={()=>router('/')}>
           Login
         </Button>
         <div className="flex justify-end items-end">
-          <span className="text-sm text-[#AFC2CF] font-semibold cursor-pointer">Forget Password?</span>
+          <span className="text-sm text-[#AFC2CF] font-semibold cursor-pointer" onClick={()=>router('/forgotpassword')}>Forget Password?</span>
         </div>
-        <Button variant="contained" fullWidth style={{ background: "#4EAAE9", color: "#fff" }}>
+        <Button variant="contained" fullWidth style={{ background: "#4EAAE9", color: "#fff" }} onClick={()=>router('/signup')}>
           JOIN SVRYN
         </Button>
       </form>

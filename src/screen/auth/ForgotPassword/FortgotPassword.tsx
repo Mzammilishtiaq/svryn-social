@@ -1,10 +1,10 @@
 import React from 'react';
-import { Card, Button, Divider, Typography, Box } from '@mui/material';
+import { Card, Button, Typography, Box } from '@mui/material';
 import { motion } from 'framer-motion';
-import {GoogleIcon,BgSignup,AppleIcon} from '../../../shared/Imageurl'
+import {BgSignup} from '../../../shared/Imageurl'
 import {useNavigate} from 'react-router-dom'
 
-const Signup = () => {
+const ForgotPassw = () => {
   const router = useNavigate();
   return (
     <div className="w-full h-screen">
@@ -43,7 +43,7 @@ const Signup = () => {
             Log in
           </Button>
         </div>
-      {/* Right Side: Signup Card */}
+      {/* Right Side: ForgotPassw Card */}
       <div className="flex items-center justify-center w-full">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -52,39 +52,23 @@ const Signup = () => {
           className='lg:w-[55%]'
         >
           <Card className="rounded-2xl shadow-2xl bg-[#f9f7f4] py-5 px-10 flex flex-col lg:space-y-3">
-            <Typography variant="h4" align="center" className="font-bold mb-2">
-              SVRYN SOCIAL
+            <Typography variant="h5" align="center" className="font-bold mb-2">
+            Forgot Your Password
             </Typography>
-            <Typography variant="h6" align="center" className="mb-6 font-semibold text-[#373737]">
-              Welcome back
+            <Typography variant="caption" align="center" className="mb-6 font-normal text-[#373737]">
+            Enter your email address below, and we’ll send you a link to reset your password.
             </Typography>
             <Box component="form" className="flex flex-col gap-4">
-              <input name="Name" className='rounded-xl border border-[#373737] placeholder:text-[#373737] p-2' placeholder='Name' />
-              <input name="Email" className='rounded-xl border border-[#373737] placeholder:text-[#373737] p-2' placeholder='Email' />
-              <input name="Password" type="password" className='rounded-xl border border-[#373737] placeholder:text-[#373737] p-2' placeholder='Password' />
-              <input name="Confirm Password" type="password" className='rounded-xl border border-[#373737] placeholder:text-[#373737] p-2' placeholder='Confirm Password' />
+              <input name="Email" className='rounded-xl border border-[#373737] placeholder:text-[#373737] placeholder:text-sm p-2' placeholder='Rachel781stinson@gmail.com ' />
               <Button
                 variant="contained"
                 color="inherit"
-                className="!bg-black !text-white !rounded-lg !py-3 !text-lg !font-semibold mt-2"
+                className="!bg-black !text-white !rounded-lg !py-3 !text-sm !font-normal mt-2 "
                 fullWidth
               >
-                Sign Up
+               Request Link
               </Button>
             </Box>
-            <Divider className="!my-6">or</Divider>
-            <div className="flex justify-center gap-x-4 mb-4">
-              <Button  className="!rounded-full !p-3 min-w-0">
-                <img src={GoogleIcon}/>
-              </Button>
-              <Button  className="!rounded-full !p-3 min-w-0">
-                <img src={AppleIcon} />
-              </Button>
-            </div>
-            <Typography align="center" className="text-[#373737]">
-              Already have an account?{' '}
-              <span className="font-semibold text-[#373737] cursor-pointer" onClick={()=>router('/login')}>Log in.</span>
-            </Typography>
           </Card>
         </motion.div>
       </div>
@@ -94,4 +78,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default ForgotPassw;

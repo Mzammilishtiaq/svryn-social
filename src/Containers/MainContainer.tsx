@@ -9,7 +9,7 @@ function MainContainer() {
         <Navbar/>
         <div className='flex items-start px-32'>
             <Sidebar/>
-            <div className="min-h-screen w-full m-4"> <Outlet /></div>
+            <div className="min-h-screen w-full m-4 overflow-hidden"><Outlet /></div>
         </div>
     </div>
   )
