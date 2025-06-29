@@ -9,7 +9,7 @@ import Reels from "./screen/Main/Reels"
 import Postview from "./screen/Post/Postview"
 
 const Routers = [
-  {path:'/login',
+  {path:'/',
     component:<Login/>
   },
   {path:'/forgotpassword',
@@ -21,18 +21,18 @@ const Routers = [
     component:<Postview/>
   },  
   {
-      path: '',
+      path: '/',
       component: <MainContainer />,
       children: [
         {
-          path: '',
+          path: 'main',
           component:<MainPage/>,
         },
         {
-          path: '/profile',
+          path: 'profile',
           component:<Profile/>,
         } ,{
-          path: '/reels',
+          path: 'reels',
           component:<Reels/>,
         }
       ]
