@@ -82,7 +82,7 @@ const Signup = () => {
             </div>
             <Typography align="center" className="text-[#373737]">
               Already have an account?{' '}
-              <span className="font-semibold text-[#373737] cursor-pointer" onClick={()=>router('/login')}>Log in.</span>
+              <span className="font-semibold text-[#373737] cursor-pointer" onClick={()=>router('/')}>Log in.</span>
             </Typography>
           </Card>
         </motion.div>

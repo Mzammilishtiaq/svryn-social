@@ -64,7 +64,7 @@ const LoginPage = () => {
       <form className="bg-white rounded-lg shadow-lg p-4 w-80 flex flex-col gap-4">
        <input placeholder="Email" name="email" className="rounded-xl border border-[#373737] p-2"/>
        <input placeholder="Password" name="password" className="rounded-xl border border-[#373737] p-2"/>
-        <Button variant="contained"  sx={{backgroundColor:'#AFC2CF'}} fullWidth onClick={()=>router('/')}>
+        <Button variant="contained"  sx={{backgroundColor:'#AFC2CF'}} fullWidth onClick={()=>router('/main')}>
           Login
         </Button>
         <div className="flex justify-end items-end">

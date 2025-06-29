@@ -36,7 +36,7 @@ const ForgotPassw = () => {
           <Button
             variant="contained"
             color="primary"
-            onClick={()=>router('/login')}
+            onClick={()=>router('/')}
             className="!bg-black !text-white !rounded-lg !px-8 !py-2 !text-lg !font-semibold shadow-lg w-[40%]"
           >
             Log in
