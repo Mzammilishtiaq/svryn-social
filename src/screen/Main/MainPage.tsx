@@ -1,4 +1,3 @@
-import React from 'react'
 import HomeComponent from '../../shared/HomeComponent/HomeComponent'
 
 function MainPage() {

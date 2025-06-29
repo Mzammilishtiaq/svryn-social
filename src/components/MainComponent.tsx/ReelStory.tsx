@@ -1,4 +1,3 @@
-import React from 'react';
 import { Clapperboard} from 'lucide-react';
 import Button from '@mui/material/Button';
 import { Swiper, SwiperSlide } from 'swiper/react';

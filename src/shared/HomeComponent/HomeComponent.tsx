@@ -1,4 +1,3 @@
-import React from 'react';
 import MainSearchbar from '../../components/MainComponent.tsx/MainSearchBar';
 import MainStory from '../../components/MainComponent.tsx/MainStory';
 import MainPost from '../../components/MainComponent.tsx/MainPost';

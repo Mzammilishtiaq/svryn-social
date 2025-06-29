@@ -6,6 +6,7 @@ import ForgotPassword from "./screen/auth/ForgotPassword/FortgotPassword"
 import MainPage from "./screen/Main/MainPage"
 import Profile from "./screen/Main/Profile"
 import Reels from "./screen/Main/Reels"
+import Postview from "./screen/Post/Postview"
 
 const Routers = [
   {path:'/login',
@@ -16,6 +17,8 @@ const Routers = [
   }, 
   {path:'/signup',
     component:<Signup/>
+  },  {path:'/postview',
+    component:<Postview/>
   },  
   {
       path: '',

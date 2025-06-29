@@ -1,4 +1,3 @@
-import React from 'react';
 import { Card, Button, Divider, Typography, Box } from '@mui/material';
 import { motion } from 'framer-motion';
 import {GoogleIcon,BgSignup,AppleIcon} from '../../../shared/Imageurl'

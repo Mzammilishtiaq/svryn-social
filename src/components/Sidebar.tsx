@@ -1,4 +1,3 @@
-import React from "react";
 import { Avatar } from "@mui/material";
 import {Ads,Chat,Group,Home,Marketplace,Page,Post,Profile,Setting,Online1,Online2,Online3,Online4,Online5,Online6,Online7} from '../shared/Imageurl'
 
@@ -27,7 +26,7 @@ const BottomAvatars = [
 
 function Sidebar() {
   return (
-    <div className="min-h-screen w-[20%] sticky top-0">
+    <div className="min-h-screen w-[500px] sticky top-0 overflow-y-scroll h-screen scrollbar-thin scrollbar-thumb-[#AFC2CF] scrollbar-track-gray-200 hover:scrollbar-thumb-gray-600">
       <div className="flex justify-center items-center">
         <div className="border-r-2 border-r-[#AFC2CF] h-3 w-2"></div>
       </div>

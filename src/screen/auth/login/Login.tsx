@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Button, LinearProgress } from "@mui/material";
 import { motion } from "framer-motion";
 import {LoginPhone,Login1,Login2,Login3,Logo} from '../../../shared/Imageurl';

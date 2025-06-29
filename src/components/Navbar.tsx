@@ -4,7 +4,7 @@ import { Star, Bell, MessageCircle, Search } from "lucide-react";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="w-full bg-[#A9B6BC] flex items-center justify-between px-8 py-4">
+    <nav className="w-full bg-[#A9B6BC] flex items-center justify-between px-8 sticky top-0 z-50">
       {/* Logo */}
       <div className="text-[56px] font-serif tracking-widest text-[#E6E4DA] select-none" style={{ fontFamily: "'Cinzel Decorative', serif" }}>
         SVRYN

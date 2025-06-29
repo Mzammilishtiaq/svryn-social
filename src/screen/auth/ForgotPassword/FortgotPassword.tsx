@@ -1,4 +1,3 @@
-import React from 'react';
 import { Card, Button, Typography, Box } from '@mui/material';
 import { motion } from 'framer-motion';
 import {BgSignup} from '../../../shared/Imageurl'
